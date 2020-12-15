@@ -33,7 +33,7 @@ export const applis: Appli[] = [
           'https://play.google.com/store/apps/details?id=com.alphabrend.formationbattle&hl=ja',
       },
       ios: {
-        en: 'https://apps.apple.com/jp/app/id1527275998',
+        en: 'https://apps.apple.com/us/app/id1527275998',
         ja: 'https://apps.apple.com/jp/app/id1527275998',
       },
     },
@@ -54,7 +54,7 @@ export const applis: Appli[] = [
       },
       ios: {
         en: 'https://apps.apple.com/us/app/anyone-composer/id1512752830',
-        ja: 'https://apps.apple.com/us/app/anyone-composer/id1512752830',
+        ja: 'https://apps.apple.com/jp/app/anyone-composer/id1512752830',
       },
     },
     image: 'anyone_composer.png',
@@ -74,7 +74,7 @@ export const applis: Appli[] = [
       },
       ios: {
         en: 'https://apps.apple.com/us/app/id1487309376',
-        ja: 'https://apps.apple.com/us/app/id1487309376',
+        ja: 'https://apps.apple.com/jp/app/id1487309376',
       },
     },
     image: 'train.png',
@@ -93,7 +93,7 @@ export const applis: Appli[] = [
       },
       ios: {
         en: 'https://apps.apple.com/us/app/id1518932510',
-        ja: 'https://apps.apple.com/us/app/id1518932510',
+        ja: 'https://apps.apple.com/jp/app/id1518932510',
       },
     },
     image: 'car.png',
@@ -192,7 +192,7 @@ export const applis: Appli[] = [
       },
       ios: {
         en: 'https://apps.apple.com/us/app/hanamaru-achievement/id1504011585',
-        ja: 'https://apps.apple.com/us/app/hanamaru-achievement/id1504011585',
+        ja: 'https://apps.apple.com/jp/app/hanamaru-achievement/id1504011585',
       },
     },
     image: 'hanamaru.png',
