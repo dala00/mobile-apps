@@ -1,7 +1,6 @@
-import { useRouter } from 'next/router'
-import Image from 'next/image'
+import Head from 'next/head'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useState, MouseEvent } from 'react'
 import {
   applis,
   categories,
@@ -18,7 +17,6 @@ type Props = {
 }
 
 export default function Apps(props: Props) {
-  const router = useRouter()
   const [categoryId, setCategoryId] = useState<CategoryId>('children')
   const selectedApplis = applis.filter(
     (appli) =>
@@ -26,26 +24,54 @@ export default function Apps(props: Props) {
       appli.url[props.platform][props.locale] !== ''
   )
 
+  function selectTab(
+    event: MouseEvent<HTMLAnchorElement, globalThis.MouseEvent>,
+    selectedCategoryId: CategoryId
+  ) {
+    event.preventDefault()
+    setCategoryId(selectedCategoryId)
+  }
+
   return (
-    <div className="container">
-      <div className="row flex-wrap">
-        {selectedApplis.map((appli) => (
-          <Link
-            href={appli.url[props.platform][props.locale]}
-            key={appli.name.en}
-          >
-            <a className="col-6 col-sm-4 my-3">
-              <div className="card">
-                <div className="card-body text-center">
-                  <img src={`/images/${appli.image}`} width="100%" />
-                  <div>{appli.name[props.locale]}</div>
+    <>
+      <Head>
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+      </Head>
+      <div className="container" style={{ marginBottom: '50px' }}>
+        <div className="row flex-wrap">
+          {selectedApplis.map((appli) => (
+            <Link
+              href={appli.url[props.platform][props.locale]}
+              key={appli.name.en}
+            >
+              <a className="col-6 col-sm-4 my-3">
+                <div className="card">
+                  <div className="card-body text-center">
+                    <img src={`/images/${appli.image}`} width="100%" />
+                    <div className="app-label">{appli.name[props.locale]}</div>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </Link>
-        ))}
+              </a>
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
+      <nav className="bottom-navi">
+        {categories.map((category) => (
+          <a
+            href="#"
+            key={category.id}
+            className={category.id === categoryId ? 'active' : ''}
+            onClick={(e) => selectTab(e, category.id)}
+          >
+            {category.name[props.locale]}
+          </a>
+        ))}
+      </nav>
+    </>
   )
 }
 

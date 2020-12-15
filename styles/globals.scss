@@ -1,5 +1,37 @@
 @import '~bootstrap/scss/bootstrap';
 
+body {
+  background: #eeeeee;
+}
+
 a {
   text-decoration: none;
+}
+
+.app-label {
+  margin-top: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bottom-navi {
+  background: #fafafa;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+
+  a {
+    color: #212121;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    width: 50%;
+
+    &.active {
+      background: #fff9c4;
+      border: #bdbdbd solid 1px;
+    }
+  }
 }

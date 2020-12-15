@@ -20,6 +20,46 @@ export const categories: Category[] = [
 
 export const applis: Appli[] = [
   {
+    categoryId: 'all',
+    name: {
+      en: 'Formation Battle',
+      ja: 'フォーメーションバトル',
+    },
+    url: {
+      android: {
+        en:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.formationbattle',
+        ja:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.formationbattle&hl=ja',
+      },
+      ios: {
+        en: 'https://apps.apple.com/jp/app/id1527275998',
+        ja: 'https://apps.apple.com/jp/app/id1527275998',
+      },
+    },
+    image: 'formationbattle.png',
+  },
+  {
+    categoryId: 'all',
+    name: {
+      en: 'Anyone Composer',
+      ja: '誰でも作曲家、演奏家',
+    },
+    url: {
+      android: {
+        en:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.composer',
+        ja:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.composer&hl=ja',
+      },
+      ios: {
+        en: 'https://apps.apple.com/us/app/anyone-composer/id1512752830',
+        ja: 'https://apps.apple.com/us/app/anyone-composer/id1512752830',
+      },
+    },
+    image: 'anyone_composer.png',
+  },
+  {
     categoryId: 'children',
     name: {
       en: 'Play with Train',
@@ -77,5 +117,84 @@ export const applis: Appli[] = [
       },
     },
     image: 'airplane.png',
+  },
+  {
+    categoryId: 'children',
+    name: {
+      en: 'Play with Parking',
+      ja: 'ちゅうしゃじょうで あそぶ',
+    },
+    url: {
+      android: {
+        en:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.parking',
+        ja:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.parking&hl=ja',
+      },
+      ios: {
+        en: '',
+        ja: '',
+      },
+    },
+    image: 'parking.png',
+  },
+  {
+    categoryId: 'children',
+    name: {
+      en: 'Play with Bus',
+      ja: 'ばすで あそぶ',
+    },
+    url: {
+      android: {
+        en: 'https://play.google.com/store/apps/details?id=com.alphabrend.bus',
+        ja:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.bus&hl=ja',
+      },
+      ios: {
+        en: '',
+        ja: '',
+      },
+    },
+    image: 'bus.png',
+  },
+  {
+    categoryId: 'children',
+    name: {
+      en: 'Play with Collection',
+      ja: 'あつめて あそぶ',
+    },
+    url: {
+      android: {
+        en:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.collection',
+        ja:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.collection&hl=ja',
+      },
+      ios: {
+        en: '',
+        ja: '',
+      },
+    },
+    image: 'collection.png',
+  },
+  {
+    categoryId: 'children',
+    name: {
+      en: 'Hanamaru Task',
+      ja: 'はなまるスケジュール',
+    },
+    url: {
+      android: {
+        en:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.hanamaru',
+        ja:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.hanamaru&hl=ja',
+      },
+      ios: {
+        en: 'https://apps.apple.com/us/app/hanamaru-achievement/id1504011585',
+        ja: 'https://apps.apple.com/us/app/hanamaru-achievement/id1504011585',
+      },
+    },
+    image: 'hanamaru.png',
   },
 ]
