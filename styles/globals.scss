@@ -10,6 +10,7 @@ a {
 
 .app-label {
   margin-top: 8px;
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
