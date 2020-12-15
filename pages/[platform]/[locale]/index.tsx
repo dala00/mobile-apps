@@ -40,6 +40,11 @@ export default function Apps(props: Props) {
   return (
     <>
       <Head>
+        <title>
+          {props.locale === 'ja'
+            ? 'アルファブレンドのアプリ'
+            : 'Alphabrend Apps'}
+        </title>
         <link
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
