@@ -58,4 +58,24 @@ export const applis: Appli[] = [
     },
     image: 'car.png',
   },
+  {
+    categoryId: 'children',
+    name: {
+      en: 'Play with Airplane',
+      ja: 'ひこうきで あそぶ',
+    },
+    url: {
+      android: {
+        en:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.airplane',
+        ja:
+          'https://play.google.com/store/apps/details?id=com.alphabrend.airplane&hl=ja',
+      },
+      ios: {
+        en: '',
+        ja: '',
+      },
+    },
+    image: 'airplane.png',
+  },
 ]
