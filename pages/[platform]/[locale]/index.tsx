@@ -9,6 +9,7 @@ import {
   Platform,
   platforms,
 } from '../../../lib/data'
+import { event } from '../../../lib/gtag'
 import { CategoryId } from '../../../models/Category'
 
 type Props = {
@@ -32,6 +33,10 @@ export default function Apps(props: Props) {
     setCategoryId(selectedCategoryId)
   }
 
+  function sendEvent(url: string) {
+    event('click', props.platform, url)
+  }
+
   return (
     <>
       <Head>
@@ -47,7 +52,12 @@ export default function Apps(props: Props) {
               href={appli.url[props.platform][props.locale]}
               key={appli.name.en}
             >
-              <a className="col-6 col-sm-4 my-3">
+              <a
+                className="col-6 col-sm-4 my-3"
+                onClick={() =>
+                  sendEvent(appli.url[props.platform][props.locale])
+                }
+              >
                 <div className="card">
                   <div className="card-body text-center">
                     <img src={`/images/${appli.image}`} width="100%" />
